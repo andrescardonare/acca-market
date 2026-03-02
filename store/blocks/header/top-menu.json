@@ -1,0 +1,61 @@
+{
+  "sticky-layout#my-sticky-menu": {
+    "props": {
+      "blockClass": "sticky-header",
+      "position": "top"
+    },
+    "children": ["flex-layout.row#menu-container"]
+  },
+
+  "flex-layout.row#menu-container": {
+    "children": [
+      "vtex.menu@2.x:menu#websites",
+      "vtex.menu@2.x:menu#institutional"
+    ]
+  },
+
+  "vtex.menu@2.x:menu#websites": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": [
+      "menu-item#shop",
+      "menu-item#about-us"
+    ]
+  },
+  "menu-item#shop": {
+    "props": {
+      "id": "menu-item-shop",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Shop",
+        "text": "Shop"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#institutional": {
+    "children": [
+      "menu-item#vtex-website"
+    ]
+  },
+  "menu-item#vtex-website": {
+    "props": {
+      "id": "menu-item-vtex-website",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "http://vtex.com",
+        "noFollow": false,
+        "tagTitle": "visit vtex.com",
+        "text": "visit vtex.com"
+      }
+    }
+  }
+}

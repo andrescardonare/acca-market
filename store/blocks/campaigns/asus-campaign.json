@@ -1,0 +1,88 @@
+{
+ "store.custom#asus-campaign": {
+   "blocks": [
+    "flex-layout.row#asus-campaign",
+    "rich-text#shelf-title3",
+    "list-context.product-list#asus-campaign-shelf"
+   ]
+ },
+
+
+ "flex-layout.row#asus-campaign": {
+   "children": [
+     "image#asus-campaign",
+     "flex-layout.col#text-asus-campaign"
+   ]
+ },
+ "flex-layout.col#text-asus-campaign": {
+   "children": [
+     "rich-text#about-title",
+     "rich-text#about-content"
+   ],
+       "props": {
+     "preventVerticalStretch": true
+   }
+ },
+"rich-text#about-title": {
+   "props": { 
+     "text":
+     "### 🔥 ASUS SALE: Level Up Your Setup with ROG! 🔥"
+   }
+ },
+ "rich-text#about-content": {
+   "props": {
+     "text":
+     "##### Are you ready to dominate the digital battlefield? The ASUS SALE has arrived with unbeatable offers designed exclusively for those who refuse to settle for second best. Discover massive discounts on the latest ROG gear—from powerhouse GeForce RTX 40 Series graphics cards and high-performance AMD Ryzen & Intel motherboards, to curved monitors that pull you straight into the heart of the action. Gear up with elite peripherals, including precision mechanical keyboards, ultra-responsive mice, and immersive headsets. Don't just play the game—own it. Join the Republic, grab our Unmissable Deals!, and enter our Join & Win! giveaway for a chance to take home the ultimate setup. \nUpgrade your arsenal today—stock is limited!"
+   }
+ },
+ "image#asus-campaign": {
+   "props": {
+     "src": "https://accamarket.vtexassets.com/assets/vtex.file-manager-graphql/images/15aff69b-5509-4495-b077-c61c8d0fb1fb___c227258fa65900381509ac2dcc78d18f.jpg",
+     "maxHeight": "600px"
+   }
+ },
+
+  "rich-text#shelf-title3": {
+  "props": {
+    "text": "## 🔥 TOP DISCOUNTS 🔥",
+    "blockClass": "shelfTitle"
+  }
+  },
+  "flex-layout.row#shelf2": {
+    "children": ["list-context.product-list#asus-campaign-shelf"]
+  },
+  "list-context.product-list#asus-campaign-shelf": {
+    "blocks": ["product-summary.shelf#asus-campaign-shelf"],
+    "children": [
+      "slider-layout#asus-campaign-shelf"
+    ],
+    "props": {
+      "collection":"141",
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "product-summary.shelf#asus-campaign-shelf": {
+    "children": [
+      "stack-layout#prodsum",
+      "product-summary-name",
+      "product-summary-space",
+      "product-list-price",
+      "product-selling-price",
+      "product-price-savings",
+      "product-summary-buy-button"
+    ]
+  },
+  "slider-layout#asus-campaign-shelf": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  }
+
+}

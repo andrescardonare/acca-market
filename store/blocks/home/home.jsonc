@@ -89,9 +89,9 @@
       "textPosition": "left",
       "imageUrl": "https://accamarket.vtexassets.com/assets/vtex.file-manager-graphql/images/ba3438d8-4dfa-4d5b-97d3-c1043e01a5d4___4ebfb98e80ed5d142b3d254600d75437.jpeg",
       "headline": "ASUS SALE!",
-      "imageActionUrl":"/",
+      "imageActionUrl":"/asus-campaign",
       "callToActionText": "DISCOVER",
-      "callToActionUrl": "/",
+      "callToActionUrl": "/asus-campaign",
       "blockClass": "info-card-home",
       "textAlignment": "center"
     }
@@ -102,7 +102,7 @@
   
   "rich-text#shelf-title2": {
   "props": {
-    "text": "‎ ",
+    "text": "‎",
     "blockClass": "shelfTitle"
   }
   },

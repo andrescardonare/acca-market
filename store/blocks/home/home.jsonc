@@ -6,9 +6,13 @@
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
       "flex-layout.row#deals",
       "__fold__",
+      // Shelf 1
       "rich-text#shelf-title",
       "flex-layout.row#shelf",
       "info-card#home",
+      // Shelf 2
+      "rich-text#shelf-title2",
+      "flex-layout.row#shelf2",
       "rich-text#question",
       "rich-text#link",
       "newsletter"
@@ -45,9 +49,11 @@
     }
   },
 
+
+  // Shelf 1
   "rich-text#shelf-title": {
     "props": {
-      "text": "## Summer",
+      "text": "### Best Sellers",
       "blockClass": "shelfTitle"
     }
   },
@@ -74,17 +80,53 @@
     }
   },
 
+  
+
   "info-card#home": {
     "props": {
       "id": "info-card-home",
       "isFullModeStyle": false,
       "textPosition": "left",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
-      "headline": "Clearance Sale",
+      "imageUrl": "https://accamarket.vtexassets.com/assets/vtex.file-manager-graphql/images/ba3438d8-4dfa-4d5b-97d3-c1043e01a5d4___4ebfb98e80ed5d142b3d254600d75437.jpeg",
+      "headline": "ASUS SALE!",
+      "imageActionUrl":"/",
       "callToActionText": "DISCOVER",
-      "callToActionUrl": "/sale/d",
+      "callToActionUrl": "/",
       "blockClass": "info-card-home",
       "textAlignment": "center"
+    }
+  },
+
+
+  // Shelf 2
+  
+  "rich-text#shelf-title2": {
+  "props": {
+    "text": "‎ ",
+    "blockClass": "shelfTitle"
+  }
+  },
+  "flex-layout.row#shelf2": {
+    "children": ["list-context.product-list#demo2"]
+  },
+  "list-context.product-list#demo2": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products2"],
+    "props": {
+      "collection":"141",
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#demo-products2": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
     }
   },
 

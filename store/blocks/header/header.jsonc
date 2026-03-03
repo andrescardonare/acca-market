@@ -80,7 +80,7 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png"
+      "url": "https://accamarket.vtexassets.com/assets/vtex.file-manager-graphql/images/380be527-6e0d-4f0d-a2b5-8462fc5bead7___d20dc6bc951c645e9807714284c25c07.png"
     }
   },
   "header-layout.mobile": {
@@ -110,7 +110,7 @@
 
   "menu#drawer": {
     "children": [
-      "menu-item#category-apparel",
+      "menu-item#main-menu-components",
       "menu-item#category-home",
       "menu-item#more"
     ],
@@ -123,9 +123,7 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo-mobile.png",
-      "width": "77.5",
-      "height": "27.5"
+      "url": "https://accamarket.vtexassets.com/assets/vtex.file-manager-graphql/images/380be527-6e0d-4f0d-a2b5-8462fc5bead7___d20dc6bc951c645e9807714284c25c07.png"
     }
   }
 }

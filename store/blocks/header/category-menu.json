@@ -1,92 +1,388 @@
 {
-  "vtex.menu@2.x:menu#category-menu": {
+    "vtex.menu@2.x:menu#category-menu": {
     "props": {
       "experimentalOptimizeRendering": true
     },
     "children": [
-      "menu-item#category-apparel",
-      "menu-item#category-home",
-      "menu-item#more"
+      "menu-item#main-menu-components",
+      "menu-item#main-menu-casing-cooling",
+      "menu-item#main-menu-peripherals",
+      "menu-item#main-menu-systems"
     ]
   },
-  "menu-item#category-apparel": {
+
+  "menu-item#main-menu-components": {
     "props": {
-      "id": "menu-item-category-apparel",
+      "id": "menu-item-main-menu-components",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/apparel---accessories/",
+        "href": "/components",
         "noFollow": false,
-        "tagTitle": "Apparel & Accessories",
-        "text": "Apparel & Accessories"
+        "tagTitle": "Components",
+        "text": "Components"
       }
     },
     "blocks": [
-      "vtex.menu@2.x:submenu#category-apparel"
+      "vtex.menu@2.x:submenu#main-menu-components"
     ]
   },
-  "vtex.menu@2.x:submenu#category-apparel": {
+  "vtex.menu@2.x:submenu#main-menu-components": {
     "props": {
       "width": "auto"
     },
     "children": [
-      "vtex.menu@2.x:menu#category-apparel"
+      "vtex.menu@2.x:menu#main-menu-components"
     ]
   },
-  "vtex.menu@2.x:menu#category-apparel": {
+  "vtex.menu@2.x:menu#main-menu-components": {
     "props": {
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#category-apparel-clothing",
-      "menu-item#category-apparel-accessories",
-      "menu-item#category-apparel-eyeglasses"
+      "menu-item#main-menu-components-graphics-cards",
+      "menu-item#main-menu-components-memory",
+      "menu-item#main-menu-components-motherboards",
+      "menu-item#main-menu-components-psus",
+      "menu-item#main-menu-components-storage",
+      "menu-item#main-menu-components-x64-processors"
     ]
   },
-  "menu-item#category-apparel-clothing": {
+  "menu-item#main-menu-components-graphics-cards": {
     "props": {
-      "id": "menu-item-category-apparel-clothing",
+      "id": "menu-item-main-menu-components-graphics-cards",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/apparel---accessories/clothing/",
+        "href": "/components/graphic-cards/",
         "noFollow": false,
-        "tagTitle": "Clothing",
-        "text": "Clothing"
+        "tagTitle": "Graphic Cards",
+        "text": "Graphic Cards"
       }
     }
   },
-  "menu-item#category-apparel-accessories": {
+  "menu-item#main-menu-components-memory": {
     "props": {
-      "id": "menu-item-category-apparel-accessories",
+      "id": "menu-item-main-menu-components-memory",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/apparel---accessories/accessories/",
+        "href": "/components/memory/",
         "noFollow": false,
-        "tagTitle": "Accessories",
-        "text": "Accessories"
+        "tagTitle": "Memory",
+        "text": "Memory"
       }
     }
   },
-  "menu-item#category-apparel-eyeglasses": {
+  "menu-item#main-menu-components-motherboards": {
     "props": {
-      "id": "menu-item-category-apparel-eyeglasses",
+      "id": "menu-item-main-menu-components-motherboards",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/apparel---accessories/eyeglasses/",
+        "href": "/components/motherboards/",
         "noFollow": false,
-        "tagTitle": "Eyeglasses",
-        "text": "Eyeglasses"
+        "tagTitle": "Motherboards",
+        "text": "Motherboards"
+      }
+    }
+  },
+  "menu-item#main-menu-components-psus": {
+    "props": {
+      "id": "menu-item-main-menu-components-psus",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/components/psus/",
+        "noFollow": false,
+        "tagTitle": "PSUs",
+        "text": "PSUs"
+      }
+    }
+  },
+  "menu-item#main-menu-components-storage": {
+    "props": {
+      "id": "menu-item-main-menu-components-storage",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/components/storage/",
+        "noFollow": false,
+        "tagTitle": "Storage",
+        "text": "Storage"
+      }
+    }
+  },
+  "menu-item#main-menu-components-x64-processors": {
+    "props": {
+      "id": "menu-item-main-menu-components-x64-processors",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/components/x64-processors/",
+        "noFollow": false,
+        "tagTitle": "x64 Processors",
+        "text": "x64 Processors"
+      }
+    }
+  },
+
+  "menu-item#main-menu-casing-cooling": {
+    "props": {
+      "id": "menu-item-main-menu-casing-cooling",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/casing---cooling",
+        "noFollow": false,
+        "tagTitle": "Casing & Cooling",
+        "text": "Casing & Cooling"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#main-menu-casing-cooling"
+    ]
+  },
+  "vtex.menu@2.x:submenu#main-menu-casing-cooling": {
+    "props": {
+      "width": "auto"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#main-menu-casing-cooling"
+    ]
+  },
+  "vtex.menu@2.x:menu#main-menu-casing-cooling": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#main-menu-casing-cooling-cases",
+      "menu-item#main-menu-casing-cooling-cpu-coolers",
+      "menu-item#main-menu-casing-cooling-fans"
+    ]
+  },
+  "menu-item#main-menu-casing-cooling-cases": {
+    "props": {
+      "id": "menu-item-main-menu-casing-cooling-cases",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/casing---cooling/cases",
+        "noFollow": false,
+        "tagTitle": "Cases",
+        "text": "Cases"
+      }
+    }
+  },
+  "menu-item#main-menu-casing-cooling-cpu-coolers": {
+    "props": {
+      "id": "menu-item-main-menu-casing-cooling-cpu-coolers",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/casing--cooling/cpu-coolers/",
+        "noFollow": false,
+        "tagTitle": "CPU Coolers",
+        "text": "CPU Coolers"
+      }
+    }
+  },
+  "menu-item#main-menu-casing-cooling-fans": {
+    "props": {
+      "id": "menu-item-main-menu-casing-cooling-fans",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/casing-cooling/fans/",
+        "noFollow": false,
+        "tagTitle": "Fans",
+        "text": "Fans"
+      }
+    }
+  },
+
+  "menu-item#main-menu-peripherals": {
+    "props": {
+      "id": "menu-item-main-menu-peripherals",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/peripherals",
+        "noFollow": false,
+        "tagTitle": "Peripherals",
+        "text": "Peripherals"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#main-menu-peripherals"
+    ]
+  },
+  "vtex.menu@2.x:submenu#main-menu-peripherals": {
+    "props": {
+      "width": "auto"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#main-menu-peripherals"
+    ]
+  },
+  "vtex.menu@2.x:menu#main-menu-peripherals": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#main-menu-peripherals-audio",
+      "menu-item#main-menu-peripherals-input-devices",
+      "menu-item#main-menu-peripherals-monitors"
+    ]
+  },
+  "menu-item#main-menu-peripherals-audio": {
+    "props": {
+      "id": "menu-item-main-menu-peripherals-audio",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/peripherals/audio/",
+        "noFollow": false,
+        "tagTitle": "Audio",
+        "text": "Audio"
+      }
+    }
+  },
+  "menu-item#main-menu-peripherals-input-devices": {
+    "props": {
+      "id": "menu-item-main-menu-peripherals-input-devices",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/peripherals/input-devices/",
+        "noFollow": false,
+        "tagTitle": "Input Devices",
+        "text": "Input Devices"
+      }
+    }
+  },
+  "menu-item#main-menu-peripherals-monitors": {
+    "props": {
+      "id": "menu-item-main-menu-peripherals-monitors",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/peripherals/monitors/",
+        "noFollow": false,
+        "tagTitle": "Monitors",
+        "text": "Monitors"
+      }
+    }
+  },
+
+  "menu-item#main-menu-systems": {
+    "props": {
+      "id": "menu-item-main-menu-systems",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/systems",
+        "noFollow": false,
+        "tagTitle": "Systems",
+        "text": "Systems"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#main-menu-systems"
+    ]
+  },
+  "vtex.menu@2.x:submenu#main-menu-systems": {
+    "props": {
+      "width": "auto"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#main-menu-systems"
+    ]
+  },
+  "vtex.menu@2.x:menu#main-menu-systems": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#main-menu-systems-bundles",
+      "menu-item#main-menu-systems-laptops",
+      "menu-item#main-menu-systems-prebuilt-pcs"
+    ]
+  },
+  "menu-item#main-menu-systems-bundles": {
+    "props": {
+      "id": "menu-item-main-menu-systems-bundles",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/systems/bundles/",
+        "noFollow": false,
+        "tagTitle": "Bundles",
+        "text": "Bundles"
+      }
+    }
+  },
+  "menu-item#main-menu-systems-laptops": {
+    "props": {
+      "id": "menu-item-main-menu-systems-laptops",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/systems/laptops/",
+        "noFollow": false,
+        "tagTitle": "Laptops",
+        "text": "Laptops"
+      }
+    }
+  },
+  "menu-item#main-menu-systems-prebuilt-pcs": {
+    "props": {
+      "id": "menu-item-main-menu-systems-prebuilt-pcs",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/systems/prebuilt-pcs/",
+        "noFollow": false,
+        "tagTitle": "Prebuilt PCs",
+        "text": "Prebuilt PCs"
       }
     }
   },

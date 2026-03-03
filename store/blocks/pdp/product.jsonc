@@ -1,5 +1,5 @@
 {
-  "store.product": {
+  "store.product.product-comparison": {
     "children": [
       "flex-layout.row#product-breadcrumb",
       "condition-layout.product#availability",
@@ -9,7 +9,8 @@
       "shelf.relatedProducts",
       "product-reviews",
       "product-questions-and-answers",
-      "product-assembly-options"
+      "product-assembly-options",
+      "product-comparison-drawer"
     ]
   },
   "product-assembly-options": {

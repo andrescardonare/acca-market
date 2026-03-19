@@ -9,10 +9,15 @@
       // Shelf 1
       "rich-text#shelf-title",
       "flex-layout.row#shelf",
+      //
       "info-card#home",
       // Shelf 2
       "rich-text#shelf-title2",
       "flex-layout.row#shelf2",
+      // Shelf 3
+      "rich-text#shelf-title3",
+      "flex-layout.row#shelf3",
+      //
       "rich-text#question",
       "rich-text#link",
       "newsletter"
@@ -122,6 +127,37 @@
     }
   },
   "slider-layout#demo-products2": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  },
+
+  // Shelf 3
+  "rich-text#shelf-title3": {
+    "props": {
+      "text": "### AMD",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "flex-layout.row#shelf3": {
+    "children": ["list-context.product-list#demo3"]
+  },
+  "list-context.product-list#demo3": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products3"],
+    "props": {
+      "collection": "140",
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#demo-products3": {
     "props": {
       "itemsPerPage": {
         "desktop": 4,

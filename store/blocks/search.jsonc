@@ -340,6 +340,7 @@
   },
   "product-summary.shelf.product-comparison#drawer": {
     "children": [
+      "product-summary-image",
       "product-summary-column#drawer-col2",
       "product-comparison-block.close-button"
     ],
